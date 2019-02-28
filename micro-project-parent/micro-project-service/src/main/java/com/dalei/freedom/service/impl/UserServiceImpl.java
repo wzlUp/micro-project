@@ -22,9 +22,6 @@ public class UserServiceImpl implements UserService {
     public UserInfoModel findUserByPhone(String phone) {
         UserInfoModel result = userServiceImplMapper.findUserByPhone(phone);
         System.out.println("UserServiceImpl findUserByPhone");
-        System.out.println("测试git更新");
-        System.out.println("测试git更新（远程---本机）");
-		System.out.println("测试git更新thinkpad");
         return result;
     }
 }
