@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>micro-project</artifactId>
+        <groupId>com.dalei.freedom</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>micro-project-parent</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>micro-project-service</module>
+        <module>micro-project-web</module>
+        <module>micro-project-model</module>
+        <module>micro-project-interface</module>
+    </modules>
+
+
+</project>

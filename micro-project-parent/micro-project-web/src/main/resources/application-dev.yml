@@ -1,0 +1,35 @@
+spring:
+  # 用到redis session的时候再打开
+  session:
+    store-type: none
+  redis:
+    database: 0
+    host: 13.209.66.135
+    port: 6379
+    password: 123456
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait: 1
+      max-idle: 8
+      min-idle: 0
+    lock:
+      waitTimeOut: 5
+      lockTimeOut: 30
+server:
+  port: 8089
+
+dubbo:
+  application:
+    name: micro-project-consumer
+    owner: micro-project-consumer
+  registry:
+    protocol: zookeeper
+    address: 13.209.66.135:2181
+  protocol:
+    name: dubbo
+    port: -1
+
+logging:
+  level:
+    root: info
