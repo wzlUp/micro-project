@@ -24,6 +24,7 @@ public class UserServiceImpl implements UserService {
         System.out.println("UserServiceImpl findUserByPhone");
         System.out.println("测试git更新");
         System.out.println("测试git更新（远程---本机）");
+		System.out.println("测试git更新thinkpad");
         return result;
     }
 }
