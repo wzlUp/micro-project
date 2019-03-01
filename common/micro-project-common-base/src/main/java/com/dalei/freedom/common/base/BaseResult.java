@@ -1,4 +1,4 @@
-package com.icc.czx.common.base;
+package com.dalei.freedom.common.base;
 
 /**
  * 基础结果类
