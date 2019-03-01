@@ -28,4 +28,10 @@ public class UserController extends BaseController {
         return "web to getUserInfo" + result;
     }
 
+    @GetMapping("/getNowDateTime")
+    public String getNowDateTime(){
+        String result = userService.getNowDateTime();
+        return "当前时间为：" + result;
+    }
+
 }
