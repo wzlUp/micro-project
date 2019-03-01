@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
     public String getNowDateTime() {
         String nowDate = DateToolUtil.getNowDate();
         System.out.println("当前时间：" + nowDate);
+        System.out.println("当前时间：" + nowDate);
         return nowDate;
     }
 }
