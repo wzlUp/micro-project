@@ -84,7 +84,7 @@ public class DateToolUtil {
      *
      * @return
      * @Description:在当前日期上加一个月
-     * @author 顾雪北
+     * @author weizl
      * @date 2014年5月5日
      */
     public static Date getNextMonth(){
@@ -102,7 +102,7 @@ public class DateToolUtil {
      *
      * @return
      * @Description:获取当前时间的后一天时间
-     * @author 顾雪北
+     * @author weizl
      * @date 2014年5月5日
      */
     public static Date getNextDay(Date date){
