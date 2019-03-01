@@ -18,5 +18,15 @@
         <module>micro-project-interface</module>
     </modules>
 
+    <dependencies>
+        <!--单元测试：其下所有模块都可使用-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring.boot.start.test}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 
 </project>

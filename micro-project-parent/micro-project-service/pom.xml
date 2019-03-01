@@ -27,6 +27,7 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--【内部依赖】-->
         <!--这里需要引入common-web、common-base、model、interface等本地jar包-->
         <!--引入common-web是为了使用它统一管理的jar包-->
         <dependency>
@@ -49,7 +50,7 @@
             <artifactId>micro-project-interface</artifactId>
             <version>1.0.0</version>
         </dependency>
-
+        <!--【外部依赖】-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

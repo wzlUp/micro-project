@@ -49,6 +49,18 @@
             <version>${lombok.version}</version>
             <optional>true</optional>
         </dependency>
+        <!--此处的test包会跟parent下的test包冲突，造成单元测试失败，去掉即可正常单元测试-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-test</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-test</artifactId>-->
+            <!--<version>5.1.5.RELEASE</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

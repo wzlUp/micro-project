@@ -15,4 +15,14 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="micro-project-common-base" options="" />
+      <module name="micro-project-common-web" options="" />
+      <module name="micro-project-interface" options="" />
+      <module name="micro-project-model" options="" />
+      <module name="micro-project-service" options="" />
+      <module name="micro-project-web" options="" />
+    </option>
+  </component>
 </project>
