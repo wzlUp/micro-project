@@ -74,6 +74,5 @@ dubbo:
     name: dubbo
     port: -1
 
-logging:
-  level:
-    root: info
+#logging:
+#  config: classpath:log4j2.xml

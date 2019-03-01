@@ -1,12 +1,16 @@
 package com.dalei.freedom.service.test;
 
 import com.dalei.freedom.commoninterface.UserService;
+import com.dalei.freedom.model.UserInfoModel;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @program: micro-project
@@ -23,10 +27,29 @@ public class UserServiceTest {
     @Autowired
     private UserService userService;
 
+    private static Logger logger = LogManager.getLogger(UserServiceTest.class);
+
     @Test
     public void timeTest() {
         String nowTime = userService.getNowDateTime();
         System.out.println(nowTime);
+    }
+
+    @Test
+    public void userTest() {
+        String phone = "13888888888";
+        UserInfoModel model = userService.findUserByPhone(phone);
+        System.out.println(model.getNikename());
+        System.out.println(model.getPassword());
+        System.out.println(model.getPhone());
+    }
+
+    @Test
+    public void testLog() {
+        logger.info("测试info日志");
+        logger.error("测试error日志");
+        logger.debug("测试debug日志");
+        logger.warn("测试warn日志");
     }
 
 }

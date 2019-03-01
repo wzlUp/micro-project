@@ -1,6 +1,6 @@
 package com.dalei.freedom.model;
 
-import lombok.Data;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -10,7 +10,12 @@ import java.io.Serializable;
  * @author: weizl
  * @create: 2019-02-28 15:26
  **/
+
 @Data
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
 public class UserInfoModel implements Serializable {
 
     private Integer userid;
