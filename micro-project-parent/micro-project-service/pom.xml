@@ -27,10 +27,16 @@
     </dependencyManagement>
 
     <dependencies>
-        <!--这里需要引入common-web、model、interface等本地jar包-->
+        <!--这里需要引入common-web、common-base、model、interface等本地jar包-->
+        <!--引入common-web是为了使用它统一管理的jar包-->
         <dependency>
             <groupId>com.dalei.freedom.common.web</groupId>
             <artifactId>micro-project-common-web</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dalei.freedom.common.base</groupId>
+            <artifactId>micro-project-common-base</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
