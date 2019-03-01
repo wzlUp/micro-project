@@ -16,4 +16,10 @@ public interface UserService {
      * @return
      */
     UserInfoModel findUserByPhone(String phone);
+
+    /**
+     * 获取当前时间字符串
+     * @return
+     */
+    String getNowDateTime();
 }
