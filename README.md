@@ -1,1 +1,1 @@
-使用dubbo、springboot、zookeeper、redis进行微服务分布式搭建，练习使用
+使用dubbo、springboot、zookeeper、redis搭建的分布式微服务框架
