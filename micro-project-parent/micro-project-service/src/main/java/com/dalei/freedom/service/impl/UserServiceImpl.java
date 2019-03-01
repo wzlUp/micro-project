@@ -1,5 +1,6 @@
 package com.dalei.freedom.service.impl;
 
+import com.dalei.freedom.common.base.utils.DateToolUtil;
 import com.dalei.freedom.commoninterface.UserService;
 import com.dalei.freedom.model.UserInfoModel;
 import com.dalei.freedom.service.mapper.UserServiceImplMapper;
@@ -23,5 +24,12 @@ public class UserServiceImpl implements UserService {
         UserInfoModel result = userServiceImplMapper.findUserByPhone(phone);
         System.out.println("UserServiceImpl findUserByPhone");
         return result;
+    }
+
+    @Override
+    public String getNowDateTime() {
+        String nowDate = DateToolUtil.getNowDate();
+        System.out.println("当前时间：" + nowDate);
+        return nowDate;
     }
 }
