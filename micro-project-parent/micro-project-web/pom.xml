@@ -42,12 +42,17 @@
             <artifactId>micro-project-interface</artifactId>
             <version>1.0.0</version>
         </dependency>
-
+        <!--外部引入-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <optional>true</optional>
+        </dependency>
+        <!--rabbitmq消息队列-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
         <!--此处的test包会跟parent下的test包冲突，造成单元测试失败，去掉即可正常单元测试-->
         <!--<dependency>-->

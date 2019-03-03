@@ -15,7 +15,8 @@ import org.springframework.context.annotation.ImportResource;
  **/
 @Slf4j
 @SpringBootApplication
-@ComponentScan({"com.dalei.freedom.service.impl"})
+//扫描com.dalei.freedom.service.message来进行运行消息队列
+@ComponentScan({"com.dalei.freedom.service.impl","com.dalei.freedom.service.message"})
 @ImportResource(value = {"classpath:dubbo/providers.xml"})
 @MapperScan({"com.dalei.freedom.service.mapper"})
 public class MicroProjectServiceApplication {

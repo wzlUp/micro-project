@@ -30,7 +30,22 @@ spring:
     filters: stat
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=2000
     useGlobalDataSourceStat: true
-  #mybatis-plus
+  ## rabbitmq消费端配置
+  rabbitmq:
+    addresses: 13.209.66.135:5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 15000
+    #进行监听消息发送端（订阅）
+    listener:
+      simple:
+        concurrency: 5
+        max-concurrency: 10
+        acknowledge-mode: manual
+        prefetch: 1
+
+##mybatis-plus
 mybatis-plus:
   mapper-locations: classpath*:mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
