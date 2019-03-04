@@ -16,6 +16,8 @@
         <module>micro-project-web</module>
         <module>micro-project-model</module>
         <module>micro-project-interface</module>
+        <module>micro-project-auxiliaryService</module>
+        <module>micro-project-serviceAssist</module>
     </modules>
 
     <dependencies>

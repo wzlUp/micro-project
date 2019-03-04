@@ -1,10 +1,7 @@
 package com.dalei.freedom.web.test;
 
 
-import com.dalei.freedom.model.UserInfoModel;
 import com.dalei.freedom.web.controller.UserController;
-import com.dalei.freedom.web.message.MqProvider;
-import com.rabbitmq.client.Consumer;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,8 +28,6 @@ public class UserControllerTest {
 
     @Autowired
     private UserController userController;
-    @Autowired
-    private MqProvider mqProvider;
 
     @Test
     public void test1() {
@@ -45,16 +40,5 @@ public class UserControllerTest {
         System.out.println(result);
     }
 
-    @Test
-    public void rabbitmqTest() {
-        UserInfoModel user = new UserInfoModel();
-        user.setUserid(2);
-        user.setUsername("weizl");
-        try {
-            mqProvider.send(user);
-        } catch (Exception e) {
-            e.printStackTrace();
 
-        }
-    }
 }

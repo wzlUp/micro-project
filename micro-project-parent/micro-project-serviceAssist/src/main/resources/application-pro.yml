@@ -18,7 +18,7 @@ spring:
       lockTimeOut: 30
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://13.209.66.135:3306/twoicc?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    url: jdbc:mysql://192.168.0.201:3306/twoicc?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
     username: root
     password: 123456
     driverClassName: com.mysql.jdbc.Driver
@@ -30,15 +30,7 @@ spring:
     filters: stat
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=2000
     useGlobalDataSourceStat: true
-  ## rabbitmq发送端配置
-  rabbitmq:
-    addresses: 13.209.66.135:5672
-    username: guest
-    password: guest
-    virtual-host: /
-    connection-timeout: 15000
-
-##mybatis-plus
+  #mybatis-plus
 mybatis-plus:
   mapper-locations: classpath*:mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
@@ -73,8 +65,8 @@ server:
 
 dubbo:
   application:
-    name: micro-project-provider
-    owner: micro-project-provider
+    name: twoicc-one-service-provider
+    owner: twoicc-one-service-provider
   registry:
     protocol: zookeeper
     address: 13.209.66.135:2181
@@ -82,5 +74,6 @@ dubbo:
     name: dubbo
     port: -1
 
-#logging:
-#  config: classpath:log4j2.xml
+logging:
+  level:
+    root: info

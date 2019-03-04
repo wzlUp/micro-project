@@ -2,6 +2,7 @@ package com.dalei.freedom.service.test;
 
 import com.dalei.freedom.commoninterface.UserService;
 import com.dalei.freedom.model.UserInfoModel;
+import com.dalei.freedom.service.message.MqProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +27,8 @@ public class UserServiceTest {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private MqProvider mqProvider;
 
     private static Logger logger = LogManager.getLogger(UserServiceTest.class);
 
@@ -50,6 +53,19 @@ public class UserServiceTest {
         logger.error("测试error日志");
         logger.debug("测试debug日志");
         logger.warn("测试warn日志");
+    }
+
+    @Test
+    public void rabbitmqTest() {
+        UserInfoModel user = new UserInfoModel();
+        user.setUserid(2);
+        user.setUsername("weizl");
+        try {
+            mqProvider.send(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
     }
 
 }

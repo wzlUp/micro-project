@@ -11,6 +11,7 @@
         <module name="micro-project-interface" />
         <module name="micro-project-model" />
         <module name="micro-project-service" />
+        <module name="micro-project-serviceAssist" />
         <module name="micro-project-web" />
       </profile>
     </annotationProcessing>

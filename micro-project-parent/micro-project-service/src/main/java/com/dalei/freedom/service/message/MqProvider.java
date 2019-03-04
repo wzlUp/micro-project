@@ -1,4 +1,4 @@
-package com.dalei.freedom.web.message;
+package com.dalei.freedom.service.message;
 
 import com.dalei.freedom.model.UserInfoModel;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

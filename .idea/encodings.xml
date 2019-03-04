@@ -6,9 +6,11 @@
     <file url="file://$PROJECT_DIR$/common/micro-project-common-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/micro-project-common-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro-project-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-project-parent/micro-project-auxiliaryService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro-project-parent/micro-project-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro-project-parent/micro-project-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro-project-parent/micro-project-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-project-parent/micro-project-serviceAssist" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro-project-parent/micro-project-web" charset="UTF-8" />
   </component>
 </project>

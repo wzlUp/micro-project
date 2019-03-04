@@ -1,4 +1,4 @@
-package com.dalei.freedom.service.message;
+package com.dalei.freedom.serviceAssist.userMessage;
 
 import com.dalei.freedom.model.UserInfoModel;
 import com.rabbitmq.client.Channel;
@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Component
 public class MqConsumer {
-    // 【切记】此处需要在启动主函数出扫描message包，否则不会对消息队列按注释进行初始化
+    // 【切记】此处需要在启动主函数处扫描userMessage包，否则不会对消息队列按注释进行初始化
 
     // 使用注解方式来设置监听哪个queue
     @RabbitListener(
@@ -34,5 +34,6 @@ public class MqConsumer {
         // 手动告诉exchange消费完毕（因为使用的是手动模式）
         Long deliveryTag = (Long) headers.get(AmqpHeaders.DELIVERY_TAG);
         channel.basicAck(deliveryTag, false);//此处需要手动进行告知queue，否则不会允许下一个消息进入
+        System.out.println("------------ 消费完成，已通知服务端 --------------");
     }
 }
